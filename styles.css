@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff3e0, #ffcc80);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.box-container {
+    border: none; /* Removed black border */
+    border-radius: 12px;
+    padding: 50px;
+    background: white; /* Keeps the white background */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+
+/* Main Container */
+.container {
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Plans Section */
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Individual Plan Box */
+.plan {
+    background: #ffcc80;
+    padding: 25px;
+    border-radius: 12px;
+    width: 240px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+.plan:hover {
+    transform: scale(1.07);
+    border: 2px solid black;
+}
+
+.plan.selected {
+    background: #ff9800;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plan.selected .price {
+    color: white; /* Change price text color to white for better contrast */
+    font-weight: bold;
+}
+
+/* Price Styling */
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+/* Feature List */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.plan ul li {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #6d4c41;
+}
+
+/* Payment Button */
+.pay-btn {
+    background: #ff9800;
+    width: 100%;
+    max-width: 270px;
+    margin-top: 25px;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.5;
+    pointer-events: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pay-btn.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.pay-btn:hover {
+    background: #f57c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}
