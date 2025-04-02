@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="box-container">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+
+            <div class="plans">
+                <div class="plan" onclick="selectPlan(this, 'Basic')">
+                    <h3>Basic</h3>
+                    <p class="price">$10/month</p>
+                    <ul>
+                        <li>✔️ 5GB Storage</li>
+                        <li>✔️ Single User</li>
+                        <li>❌ No Priority Support</li>
+                    </ul>
+                </div>
+
+                <div class="plan" onclick="selectPlan(this, 'Pro')">
+                    <h3>Pro</h3>
+                    <p class="price">$20/month</p>
+                    <ul>
+                        <li>✔️ 50GB Storage</li>
+                        <li>✔️ Up to 5 Users</li>
+                        <li>✔️ Priority Support</li>
+                    </ul>
+                </div>
+
+                <div class="plan" onclick="selectPlan(this, 'Premium')">
+                    <h3>Premium</h3>
+                    <p class="price">$30/month</p>
+                    <ul>
+                        <li>✔️ 200GB Storage</li>
+                        <li>✔️ Unlimited Users</li>
+                        <li>✔️ 24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="pay-btn" id="payBtn" disabled>Proceed to Payment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
