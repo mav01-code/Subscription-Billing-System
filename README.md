@@ -1,44 +1,58 @@
-# NexTRADE - README
+# Subscription Billing System
 
-## Overview
-NexTRADE is a digital platform designed to help Indian SMBs grow globally by providing tools for easy communication, document sharing, customer support, online store setup, and sales performance tracking. The platform also includes a health prediction application developed using Flutter and Dart, enabling patients and family members to access medical assistance during emergencies.
+A simple subscription billing system integrated with **Stripe** for payment processing.
 
 ## Features
-- **Global SMB Growth:** Tools for communication, document sharing, and business expansion.
-- **Online Store Setup:** Manage product listings and track sales performance.
-- **Health Prediction Module:** Provides emergency support for patients and families.
-- **Real-Time Support:** WebRTC and WebSockets integration for smooth communication.
-- **Security & Authentication:** OAuth 2.0 implemented for secure access.
-- **Payment Gateway:** Stripe integration for seamless transactions.
+- Subscription plans: **Basic, Pro, Premium**
+- Stripe Checkout integration
+- Secure payments using test mode
+- Responsive UI
 
 ## Tech Stack
-- **Frontend:** ReactJS
-- **Backend:** Express, Node.js
-- **Database:** PostgreSQL
-- **Real-Time Communication:** WebSockets, WebRTC
-- **Cloud Provider:** AWS
-- **Analytics & Monitoring:** Google Analytics
-- **Mobile App:** Flutter, Dart
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Payments**: Stripe API
 
 ## Installation
-```sh
-# Clone the repository
-git clone https://github.com/your-repo/nextrade.git
 
-# Navigate to the project folder
-cd nextrade
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/mav01-code/Subscription-Billing-System.git
+   cd Subscription-Billing-System
+   ```
 
-# Install dependencies
-npm install
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-# Start the server
-npm start
-```
+3. Create a `.env` file and add your **Stripe Secret Key**:
+   ```sh
+   STRIPE_SECRET_KEY=your_secret_key_here
+   ```
 
-## Contribution
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit changes and create a pull request.
+4. Start the server:
+   ```sh
+   node server.js
+   ```
 
-## Contact
-For queries, reach out to Akshaya Varshini at [your-email@example.com].
+5. Open `index.html` in your browser.
+
+## Usage
+
+- Select a subscription plan.
+- Click **Proceed to Payment**.
+- Use Stripe **test cards** (e.g., `4242 4242 4242 4242`).
+- Complete payment and get redirected to `success.html`.
+
+## Test Card Details
+
+Use the following card details for testing payments:
+
+- **Card Number**: `4242 4242 4242 4242`
+- **Expiry**: Any future date
+- **CVC**: Any 3 digits
+
+## Author
+
+Developed by **Akshaya Varshini**.
