@@ -56,3 +56,9 @@ Use the following card details for testing payments:
 ## Author
 
 Developed by **Akshaya Varshini**.
+- marreddyakshayavarshini@gmail.com
+## Co-Authors
+1. Velma Akshaya - 23951a050g@iare.ac.in
+2. Asma Begum - shaikasma3468@gmail.com
+3. Pulloju Bhargavi - pullojubhargavi211@gmail.com
+4. Peddinti Kusuma - 23951a0545@iare.ac.in
